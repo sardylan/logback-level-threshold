@@ -21,3 +21,4 @@ gradle-app.setting
 !gradle-wrapper.jar
 .gradletasknamecache
 /classes/
+/gradle.properties
