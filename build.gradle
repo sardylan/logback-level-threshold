@@ -1,0 +1,22 @@
+group "ch.qos.logback"
+version "1.0.0"
+
+apply plugin: "java"
+apply plugin: "idea"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://mvnrepo.thehellnet.org/artifactory/shab"
+    }
+}
+
+dependencies {
+    compile group: "ch.qos.logback", name: "logback-core", version: "1.1.7"
+    compile group: "ch.qos.logback", name: "logback-classic", version: "1.1.7"
+
+    testCompile group: "junit", name: "junit", version: "4.12"
+}
